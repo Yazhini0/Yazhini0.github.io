@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Yazhini Ilavarasan – MSc Engineering Management student at NTU Singapore, seeking internships in project management, business analysis, supply chain and sustainability.">
+<meta property="og:title" content="Yazhini Ilavarasan | Portfolio">
+<meta property="og:description" content="Yazhini Ilavarasan – MSc Engineering Management student at NTU Singapore, seeking internships in project management, business analysis, supply chain and sustainability.">
+<meta property="og:type" content="website">
+<title>Yazhini Ilavarasan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: recruiter-first. Sticky profile card on the left (who, what role, when, how to reach), evidence on the right in the order HR scans: summary, experience, projects, education, skills. */
+:root{
+  --bg:#F5F6F8;
+  --surface:#FFFFFF;
+  --ink:#16202B;
+  --muted:#5A6676;
+  --line:#DDE2E8;
+  --accent:#0E6E6A;
+  --accent-soft:#E2F0EE;
+  --navy:#1B2B3E;
+  --on-navy:#F2F5F8;
+  --serif:"IBM Plex Serif", Georgia, "Times New Roman", serif;
+  --sans:"IBM Plex Sans", "Segoe UI", system-ui, Arial, sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0F151C; --surface:#161F29; --ink:#E7ECF1; --muted:#9BA8B7; --line:#26323F;
+    --accent:#4FC2B6; --accent-soft:#183531; --navy:#1C2A3A; --on-navy:#EEF2F6; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0F151C; --surface:#161F29; --ink:#E7ECF1; --muted:#9BA8B7; --line:#26323F;
+  --accent:#4FC2B6; --accent-soft:#183531; --navy:#1C2A3A; --on-navy:#EEF2F6; color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+.page{max-width:1140px;margin:0 auto;padding-block:40px 56px;display:grid;grid-template-columns:330px minmax(0,1fr);gap:40px;align-items:start}
+@media (max-width:900px){.page{grid-template-columns:1fr;gap:28px;padding-block:24px 40px}}
+h1,h2,h3{text-wrap:balance;margin:0}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.label{font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:500}
+
+/* profile card */
+.profile{position:sticky;top:calc(24px + env(safe-area-inset-top, 0px));background:var(--navy);color:var(--on-navy);border-radius:8px;padding:28px;display:grid;gap:20px}
+@media (max-width:900px){.profile{position:static}}
+.monogram{width:56px;height:56px;border-radius:50%;border:1.5px solid color-mix(in srgb, var(--on-navy) 40%, transparent);display:grid;place-items:center;font-family:var(--serif);font-size:20px;font-weight:600}
+.profile h1{font-family:var(--serif);font-size:30px;font-weight:600;line-height:1.15}
+.profile .role{margin:6px 0 0;opacity:.85;font-size:15px}
+.seeking{background:color-mix(in srgb, var(--on-navy) 8%, transparent);border-radius:6px;padding:14px 16px;display:grid;gap:8px}
+.seeking .label{color:color-mix(in srgb, var(--on-navy) 70%, transparent)}
+.status{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px}
+.status::before{content:"";width:8px;height:8px;border-radius:50%;background:#3DD68C;box-shadow:0 0 0 3px color-mix(in srgb, #3DD68C 25%, transparent)}
+.seeking ul{margin:0;padding-left:18px;font-size:14.5px}
+.kv{display:grid;gap:12px;font-size:14.5px}
+.kv div{display:grid;gap:1px}
+.kv .label{color:color-mix(in srgb, var(--on-navy) 65%, transparent)}
+.kv span:last-child{word-break:break-word}
+.links{display:grid;gap:8px}
+.btn{display:flex;justify-content:center;align-items:center;gap:8px;font-family:var(--sans);font-weight:600;font-size:14.5px;padding:11px 14px;border-radius:5px;border:1px solid color-mix(in srgb, var(--on-navy) 35%, transparent);color:var(--on-navy);background:transparent;text-decoration:none;cursor:pointer}
+.btn.primary{background:var(--on-navy);color:var(--navy);border-color:var(--on-navy)}
+.btn:hover{border-color:var(--on-navy)}
+.btn svg{width:16px;height:16px;fill:currentColor;flex:none}
+
+/* main */
+main{display:grid;gap:22px;min-width:0}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:30px}
+@media (max-width:560px){.card{padding:22px}}
+.card > h2{font-family:var(--serif);font-size:22px;font-weight:600;margin-bottom:18px;display:flex;align-items:baseline;gap:12px}
+.card > h2 .label{font-family:var(--mono)}
+.summary p{margin:0 0 14px;max-width:66ch}
+.headline{font-family:var(--serif);font-size:clamp(21px,2.4vw,25px);line-height:1.35;font-weight:500;max-width:34ch;margin:0 0 16px}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1px solid var(--line);border-radius:6px;margin-top:20px}
+.stats div{padding:14px 16px;border-left:1px solid var(--line)}
+.stats div:first-child{border-left:0}
+.stats b{display:block;font-family:var(--serif);font-size:20px;font-weight:600;font-variant-numeric:tabular-nums}
+@media (max-width:640px){.stats{grid-template-columns:1fr 1fr}.stats div:nth-child(3){border-left:0}.stats div:nth-child(n+3){border-top:1px solid var(--line)}}
+
+.fit-intro{margin:-8px 0 16px;color:var(--muted)}
+.fit{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:6px;overflow:hidden;margin-bottom:24px}
+.fit div{background:var(--surface);padding:16px 18px}
+.fit h3{font-size:15.5px;font-weight:600;color:var(--accent);margin-bottom:6px}
+.fit ul{margin:0;padding-left:18px;display:grid;gap:3px;font-size:14.5px}
+@media (max-width:640px){.fit{grid-template-columns:1fr}}
+.strengths{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.strengths div{border-top:2px solid var(--accent);padding-top:12px}
+.strengths h3{font-size:16px;font-weight:600;margin-bottom:4px}
+.strengths p{margin:0;color:var(--muted);font-size:15px}
+@media (max-width:700px){.strengths{grid-template-columns:1fr}}
+
+/* timeline */
+.entry{display:grid;grid-template-columns:150px minmax(0,1fr);gap:20px;padding-block:18px;border-top:1px solid var(--line)}
+.entry:first-of-type{border-top:0;padding-top:0}
+.entry h3{font-size:17px;font-weight:600}
+.entry .org{color:var(--muted);margin:1px 0 8px;font-size:15px}
+.entry ul{margin:0;padding-left:18px;display:grid;gap:4px;max-width:64ch}
+.entry .date{font-variant-numeric:tabular-nums}
+@media (max-width:560px){.entry{grid-template-columns:1fr;gap:4px}}
+
+/* projects */
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:-4px 0 18px}
+.chip{font-family:var(--sans);font-size:13.5px;font-weight:500;padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--ink);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.projects{display:grid;gap:16px}
+.proj{border:1px solid var(--line);border-radius:6px;padding:20px 22px;display:grid;gap:10px}
+.proj .head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.proj h3{font-size:18px;font-weight:600}
+.proj .meta{font-size:13.5px;color:var(--muted)}
+.proj dl{display:grid;grid-template-columns:110px minmax(0,1fr);gap:6px 14px;margin:0;font-size:15px}
+.proj dt{font-weight:600;color:var(--muted);font-size:13.5px;padding-top:1px}
+.proj dd{margin:0;max-width:62ch}
+@media (max-width:560px){.proj dl{grid-template-columns:1fr;gap:0}.proj dd{margin-bottom:8px}}
+.tags{display:flex;flex-wrap:wrap;gap:6px;list-style:none;margin:2px 0 0;padding:0}
+.tags li{font-size:12.5px;font-weight:500;padding:3px 9px;border-radius:4px;background:var(--accent-soft);color:var(--ink)}
+.featured{border-color:var(--accent)}
+.badge{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);font-weight:500}
+
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 32px}
+@media (max-width:640px){.skills{grid-template-columns:1fr}}
+.skills h3{font-size:15px;font-weight:600;margin-bottom:8px}
+.skills p{margin:0;color:var(--ink);font-size:15px}
+.list{margin:0;padding-left:18px;display:grid;gap:4px;font-size:15px}
+footer{grid-column:1/-1;text-align:center;color:var(--muted);font-size:13.5px}
+body{margin:0}img{max-width:100%}[hidden]{display:none!important}
+</style>
+</head>
+<body>
+
+<div class="page">
+  <aside class="profile" aria-label="Profile">
+    <div class="monogram" aria-hidden="true">YI</div>
+    <div>
+      <h1>Yazhini Ilavarasan</h1>
+      <p class="role">MSc Engineering Management, NTU Singapore<br>BE Electronics &amp; Communication Engineering</p>
+    </div>
+
+    <div class="seeking">
+      <span class="status">Open to internships</span>
+      <span class="label">Target roles</span>
+      <ul>
+        <li>Project Management / PMO</li>
+        <li>Business Analyst / Operations</li>
+        <li>Supply Chain &amp; Logistics</li>
+        <li>Sustainability &amp; Clean Tech</li>
+      </ul>
+    </div>
+
+    <div class="kv">
+      <div><span class="label">Availability</span><span>Full-time, Jan – Jun 2027 or May – Aug 2027</span></div>
+      <div><span class="label">Start now</span><span>Approved by NTU for a credit-bearing capstone internship, duration agreed with the company</span></div>
+      <div><span class="label">Location</span><span>Singapore</span></div>
+      <div><span class="label">Email</span><span id="mail">yazhinipriya61@gmail.com</span></div>
+      <div><span class="label">Languages</span><span>English, Tamil</span></div>
+    </div>
+
+    <div class="links">
+      <button class="btn primary" id="copy" type="button">Copy email</button>
+      <a class="btn" href="https://www.linkedin.com/in/yazhini-i-60456b286" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.5h4V21H3V9.5Zm7 0h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.2c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V21h-4V9.5Z"/></svg>LinkedIn</a>
+      <a class="btn" href="https://github.com/Yazhini0" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg>GitHub</a>
+    </div>
+  </aside>
+
+  <main>
+    <section class="card summary" aria-labelledby="sum-h">
+      <h2 id="sum-h">Summary</h2>
+      <p class="headline">Engineer by training, project manager by direction. I connect technical teams with business decisions.</p>
+      <p>ECE graduate and MSc Engineering Management student at NTU Singapore. I led my final-year IoT project team, completed two technical internships, and now study project management, engineering economics, contract law and sustainable operations.</p>
+      <p>I am looking for an internship where I can coordinate projects, analyse data and processes, and help technical teams deliver.</p>
+      <div class="stats">
+        <div><span class="label">MSc EM</span><b>NTU</b></div>
+        <div><span class="label">BE CGPA</span><b>7.91 / 10</b></div>
+        <div><span class="label">Internships</span><b>2</b></div>
+        <div><span class="label">Publication</span><b>2025</b></div>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="fit-h">
+      <h2 id="fit-h">Role fit</h2>
+      <p class="fit-intro">How my experience lines up with the internships I am applying for.</p>
+      <div class="fit">
+        <div><h3>Project Management / PMO</h3><ul><li>Led my final-year project team (IoT smart syringe)</li><li>Led a team to build the solar tracker in one day</li><li>Held a student representative role in college</li><li>Coursework in engineering management, engineering economics and contract law</li><li>Delivered group projects on PortSync and sustainable shipping</li></ul></div>
+        <div><h3>Business Analyst / Operations</h3><ul><li>Excel: pivot tables, XLOOKUP, SUMIF, data cleaning</li><li>Pain analysis and strategy canvas for Voxa</li><li>Porter's Five Forces analysis of Duolingo</li></ul></div>
+        <div><h3>Supply Chain &amp; Logistics</h3><ul><li>Berth scheduling for port operations in PortSync</li><li>System dynamics model of the shipping industry</li><li>Saw standards and quality testing at SIRIM, Malaysia</li></ul></div>
+        <div><h3>Sustainability &amp; Clean Tech</h3><ul><li>Wrote the clean technology and emissions section of a shipping report</li><li>Built a solar tracker for higher energy capture</li><li>Published on assistive robotics and automation</li></ul></div>
+      </div>
+      <div class="strengths">
+        <div><h3>Technical fluency</h3><p>I understand how hardware, software and data systems are built, so I can work with engineers and translate between them and the business.</p></div>
+        <div><h3>Structured problem solving</h3><p>I frame problems with pain matrices, Porter's Five Forces, blue ocean strategy and system dynamics.</p></div>
+        <div><h3>User-first thinking</h3><p>My best ideas, like Voxa, start from watching real people struggle with a system and asking why.</p></div>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="exp-h">
+      <h2 id="exp-h">Experience</h2>
+      <div class="entry">
+        <span class="label date">Jul – Aug 2024</span>
+        <div><h3>Web Development Intern</h3><p class="org">SD Pro Solutions · Trichy, India</p>
+          <ul><li>Built web pages and applications using HTML, CSS and Java.</li><li>Worked within a development team on client-facing web projects.</li></ul></div>
+      </div>
+      <div class="entry">
+        <span class="label date">Jun – Jul 2023</span>
+        <div><h3>Embedded Systems &amp; IoT Intern</h3><p class="org">MarcelloTech · Trichy, India</p>
+          <ul><li>Developed embedded and IoT applications using Arduino and NodeMCU.</li><li>Programmed microcontrollers to read and process data from sensors in working prototypes.</li></ul></div>
+      </div>
+      <div class="entry">
+        <span class="label date">7 days</span>
+        <div><h3>International Immersion Programme</h3><p class="org">Kuala Lumpur, Malaysia</p>
+          <ul><li>Industry visits to Reskills (automation and robotics), SIRIM (standards, testing and certification), VR Hub (virtual reality for training and simulation) and Bank Negara Malaysia (banking supervision).</li><li>Also completed industrial visits in India to KEL and TRACO Cable in Kochi and Doordarshan Kendra in Puducherry.</li></ul></div>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="proj-h">
+      <h2 id="proj-h">Projects</h2>
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button class="chip" type="button" data-f="all" aria-pressed="true">All</button>
+        <button class="chip" type="button" data-f="mgmt" aria-pressed="false">Management &amp; strategy</button>
+        <button class="chip" type="button" data-f="tech" aria-pressed="false">Technical</button>
+      </div>
+      <div class="projects">
+        <article class="proj featured" data-c="mgmt">
+          <div class="head"><h3>Voxa: banking help for migrant workers</h3><span class="badge">Featured · Individual</span></div>
+          <span class="meta">From Lab to Market, NTU · 2026</span>
+          <dl>
+            <dt>Problem</dt><dd>Tamil and Bangladeshi migrant workers struggle to use bank video teller machines. Tamil speakers don't know which buttons to press, Bengali isn't offered, and only one person is allowed in the booth, so no one can help.</dd>
+            <dt>Solution</dt><dd>A WhatsApp voice assistant in the worker's own language that prepares the transaction, then guides them through a one-time QR code scanned at the machine.</dd>
+            <dt>My role</dt><dd>Spotted the problem first-hand. Did the problem framing, pain analysis and strategy canvas, and wrote the business rationale.</dd>
+          </dl>
+          <ul class="tags"><li>Product thinking</li><li>Pain matrix</li><li>Blue ocean strategy</li><li>Canva</li></ul>
+        </article>
+
+        <article class="proj" data-c="mgmt">
+          <div class="head"><h3>PortSync: shared berth scheduling</h3><span class="badge">Group B-1</span></div>
+          <span class="meta">Design thinking, PE6006 · 2026</span>
+          <dl>
+            <dt>Problem</dt><dd>Berth planners, vessel masters and ship agents coordinate a ship's arrival using separate information.</dd>
+            <dt>Solution</dt><dd>A real-time shared berth schedule. After professor feedback, we are adding new features, including a live map of incoming vessels.</dd>
+            <dt>My role</dt><dd>Team member through user research, ideation and redesign on a shared Canva whiteboard.</dd>
+          </dl>
+          <ul class="tags"><li>Design thinking</li><li>Maritime operations</li><li>Iteration on feedback</li></ul>
+        </article>
+
+        <article class="proj" data-c="mgmt">
+          <div class="head"><h3>Sustainable Shipping: Clean Tech &amp; Emissions</h3><span class="badge">Group report</span></div>
+          <span class="meta">System dynamics, PE6006 · 2026</span>
+          <dl>
+            <dt>Scope</dt><dd>A system dynamics study of sustainability in the shipping industry.</dd>
+            <dt>My role</dt><dd>Researched and wrote the section on clean technologies and energy emissions in maritime transport.</dd>
+          </dl>
+          <ul class="tags"><li>Sustainability</li><li>System dynamics</li><li>Research writing</li></ul>
+        </article>
+
+        <article class="proj" data-c="mgmt">
+          <div class="head"><h3>Duolingo: Porter's Five Forces</h3><span class="badge">Presentation</span></div>
+          <span class="meta">NTU MSEM · 2026</span>
+          <dl>
+            <dt>Scope</dt><dd>Competitive analysis of Duolingo covering rivalry, new entrants, substitutes, and buyer and supplier power in language learning.</dd>
+          </dl>
+          <ul class="tags"><li>Strategy</li><li>Market analysis</li><li>Presenting</li></ul>
+        </article>
+
+        <article class="proj" data-c="tech">
+          <div class="head"><h3>IoT Smart Syringe Infusion Management</h3><span class="badge">Team leader</span></div>
+          <span class="meta">Final-year project, BE ECE · 2025</span>
+          <dl>
+            <dt>Problem</dt><dd>Manual infusion monitoring can lead to dosing errors and delays.</dd>
+            <dt>Solution</dt><dd>An IoT system that monitors drug delivery in real time and allows remote control of the infusion, improving patient safety.</dd>
+            <dt>My role</dt><dd>Led the team through my final-year project, from planning and task allocation to building and presenting the system.</dd>
+          </dl>
+          <ul class="tags"><li>IoT</li><li>Embedded systems</li><li>Healthcare</li><li>Team leadership</li></ul>
+        </article>
+
+        <article class="proj" data-c="tech">
+          <div class="head"><h3>Solar Tracking System</h3><span class="badge">Team leader</span></div>
+          <span class="meta">BE ECE · Arduino</span>
+          <dl>
+            <dt>Solution</dt><dd>An Arduino-based tracker that turns the solar panel to follow the sun, capturing more energy than a fixed-tilt panel.</dd>
+            <dt>My role</dt><dd>Led a two-person team to design and build it in one day.</dd>
+          </dl>
+          <ul class="tags"><li>Arduino</li><li>Renewable energy</li><li>Leadership</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="edu-h">
+      <h2 id="edu-h">Education</h2>
+      <div class="entry">
+        <span class="label date">2026 – 2027</span>
+        <div><h3>MSc Engineering Management</h3><p class="org">Nanyang Technological University, Singapore · Expected Dec 2027</p>
+          <ul class="tags"><li>Fundamentals of Engineering Management</li><li>Economic Analysis of Engineering Projects</li><li>Law for Engineers</li><li>Sustainable Shipping</li><li>From Lab to Market</li></ul></div>
+      </div>
+      <div class="entry">
+        <span class="label date">2021 – 2025</span>
+        <div><h3>BE Electronics &amp; Communication Engineering</h3><p class="org">SRM TRP Engineering College (Anna University), Tiruchirappalli · CGPA 7.91 / 10</p>
+          <ul><li>Final-year project: led the team that built an IoT smart syringe infusion system.</li></ul></div>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="pub-h">
+      <h2 id="pub-h">Publication</h2>
+      <div class="entry">
+        <span class="label date">2025</span>
+        <div><h3>Robotics and Automation in Assistive Technologies for the Elderly and Disabled</h3><p class="org">The Dawn Publishers</p></div>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="sk-h">
+      <h2 id="sk-h">Skills &amp; certifications</h2>
+      <div class="skills">
+        <div><h3>Management &amp; analysis</h3><p>Project management, design thinking, system dynamics, competitive strategy, engineering economics, contract fundamentals, Excel (pivot tables, lookups, data cleaning)</p></div>
+        <div><h3>Technical</h3><p>C, C++, Embedded C, Python, Java, JavaScript, SQL, HTML/CSS, MERN stack, AWS basics, Git/GitHub, Arduino, NodeMCU, 8051, Raspberry Pi</p></div>
+        <div><h3>Certifications</h3>
+          <ul class="list"><li>Ethics in Engineering Practice, NPTEL (8 weeks)</li><li>Robotic Process Automation, Naan Mudhalvan</li><li>Analog IC Design, Naan Mudhalvan</li><li>MS Office Proficiency, Naan Mudhalvan</li><li>Image Processing Onramp, MathWorks</li><li>Python, Viwise Tech Softwares</li><li>Arduino Robotics Workshop, Top Engineers</li></ul></div>
+        <div><h3>Working style</h3><p>Student representative in college, leadership and initiative, communication, time management, conflict resolution and negotiation, adaptability across cultures, attention to detail</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>Yazhini I · Singapore</footer>
+</div>
+
+<script>
+document.getElementById('copy').addEventListener('click', function(){
+  var b=this, t=document.getElementById('mail');
+  function sel(){var r=document.createRange();r.selectNodeContents(t);var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Email selected';}
+  try{navigator.clipboard.writeText(t.textContent).then(function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy email'},1800)},sel);}catch(e){sel()}
+});
+document.querySelectorAll('.chip').forEach(function(c){
+  c.addEventListener('click',function(){
+    var f=c.dataset.f;
+    document.querySelectorAll('.chip').forEach(function(x){x.setAttribute('aria-pressed', x===c?'true':'false')});
+    document.querySelectorAll('.proj').forEach(function(p){p.hidden = f!=='all' && p.dataset.c!==f});
+  });
+});
+</script>
+
+</body>
+</html>
